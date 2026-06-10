@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "Remy",
+    "slug": "remy",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#fcfaf7"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Remy uses your camera to scan ingredients and support cooking guidance.",
+        "NSPhotoLibraryUsageDescription": "Remy lets you attach kitchen photos from your library."
+      }
+    },
+    "android": {
+      "permissions": ["CAMERA", "READ_MEDIA_IMAGES"]
+    }
+  }
+}

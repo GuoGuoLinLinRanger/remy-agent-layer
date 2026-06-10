@@ -1,0 +1,14 @@
+# Render Blueprint. On Render: New -> Blueprint -> connect this repo.
+# Render reads this file, pre-fills everything, and only asks you to paste the
+# GEMINI_API_KEY (it is NOT stored in the repo).
+services:
+  - type: web
+    name: remy-agent-layer
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false # Render prompts you for this; never committed.

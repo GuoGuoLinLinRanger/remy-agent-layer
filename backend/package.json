@@ -1,0 +1,28 @@
+{
+  "name": "remy-agent-layer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Remy's local agent layer: image -> structured ingredient inventory (Part 1), with recipe generation and cheaper-alternatives hooks.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "tsx src/server.ts",
+    "detect": "tsx src/cli.ts",
+    "recipe": "tsx src/recipe-cli.ts",
+    "serve": "tsx src/server.ts",
+    "test": "tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.71.0",
+    "tsx": "^4.19.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}

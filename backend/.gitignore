@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+.env.local
+*.log
+
+# scratch images people drop in to test
+/scratch/

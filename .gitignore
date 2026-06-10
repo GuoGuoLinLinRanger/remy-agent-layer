@@ -1,0 +1,23 @@
+# Dependencies (each subproject also has its own ignore)
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+
+# Env / secrets
+.env
+.env.local
+.dev.vars
+
+# Logs
+*.log
+
+# OS / editor
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# Scratch test images
+/scratch/
